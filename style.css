@@ -1,0 +1,125 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    background: url('./images/bg-desktop.svg');
+    background-color:  hsl(257, 40%, 49%);
+}
+
+.logo{
+    margin: 40px 30px;
+}
+.logo img{
+    width: 200px;
+}
+.component{
+    display: flex;
+    margin: 0px 40px;
+}
+.component .image-section{
+    flex: 3;
+    margin-right: 0px;
+}
+.component .text-section{
+    flex: 2;
+    margin-left: 0px;
+    color: white;
+}
+.component .text-section .header{
+    padding: 50px 60px 20px 0px;
+    /* margin-right: 50px; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+}
+.component .text-section .sub-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17.5px;
+    line-height: 25px;
+}
+.component .text-section .btn{
+    margin: 20px 0px;
+    padding: 13px;
+    width: 160px;
+    border: none;
+    border-radius: 20px;
+    color: hsl(257, 40%, 49%);
+    font-weight: bold;
+    box-shadow:  5px 5px 20px rgba(0, 0, 0, 0.527);
+    transition: all 1s;
+}
+.component .text-section .btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+.icons{
+    margin: 0px 20px 20px 1100px;
+}
+.icons img{
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.icons img:hover{
+    cursor: pointer;
+}
+footer{
+    margin: 30px auto;
+    text-align: center;
+    color: white;
+}
+
+/* mobile design */
+@media(max-width:750px){
+    .logo{
+        margin-bottom: 50px;
+    }
+    .component{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin: 50px 75px;
+        padding: 10px 10px;
+    }
+    .component .image-section{
+        flex: 1;
+        margin: auto;
+    }
+    .component .text-section{
+        flex: 1;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .component .text-section .header{
+        margin: 10px auto;
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .component .text-section .sub-text{
+        margin: 20px auto;
+        line-height: 50px;
+        font-size: 32px;
+    }
+    .component .image-section img{
+        width: 600px;
+    }
+    .component .text-section .btn{
+        width: 300px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .icons{
+        width: 200px;
+        margin: 100px 300px;
+    }
+    .icons img{
+        margin-left: 15px;
+    }
+
+}
