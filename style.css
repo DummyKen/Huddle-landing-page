@@ -59,14 +59,16 @@ body{
 .icons{
     margin: 0px 20px 20px 1100px;
 }
-.icons img{
-    width: 40px;
+.icons ion-icon{
+    color: gray;
+    font-size: 35px;
     border: none;
     border-radius: 50%;
-    transition: all 1s;
+    transition: all 2s;
 }
-.icons img:hover{
+.icons ion-icon:hover{
     cursor: pointer;
+    color: hsl(300, 69%, 71%);
 }
 footer{
     margin: 30px auto;
